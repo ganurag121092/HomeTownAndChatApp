@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="75dp"
+    android:layout_height="380dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="550dp"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context="edu.sdsu.anuragg.hometownandchatapp.LoggedUserActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/chat_users_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true"
+        />
+
+</RelativeLayout>

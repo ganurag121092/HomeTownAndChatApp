@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_logged_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+
+    tools:context="edu.sdsu.anuragg.hometownandchatapp.LoggedUserActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <TableRow tools:ignore="UselessParent">
+            <Spinner
+                android:text="@string/select_country"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/countrylist_spinner"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+            <Spinner
+                android:text="@string/select_state"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/statelist_spinner"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                 />
+
+
+            <Spinner
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/year_spinner"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                 />
+
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        tools:context="edu.sdsu.anuragg.hometownandchatapp.LoggedUserActivity"
+        tools:ignore="UselessLeaf"
+        android:layout_above="@+id/navigation"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.sdsu.anuragg.hometownandchatapp.LoggedUserActivity"
+        android:id="@+id/activity_find_users"
+        tools:ignore="UselessLeaf"
+        android:layout_above="@+id/navigation"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="320dp">
+
+        </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.sdsu.anuragg.hometownandchatapp.LoggedUserActivity"
+        android:name="edu.sdsu.anuragg.hometownandchatapp.UserChatFragment"
+        android:id="@+id/users_chat"
+        tools:ignore="UselessLeaf"
+        android:layout_above="@+id/navigation"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginEnd="10dp">
+
+        <!--android:name="edu.sdsu.anuragg.hometownandchatapp.UserChatFragment"-->
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.sdsu.anuragg.hometownandchatapp.LoggedUserActivity"
+        android:name="edu.sdsu.anuragg.hometownandchatapp.UserChatListFragment"
+        android:id="@+id/users_chat_list"
+        tools:ignore="UselessLeaf"
+        android:layout_above="@+id/navigation"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="530dp">
+        <!--android:name="edu.sdsu.anuragg.hometownandchatapp.UserChatListFragment"-->
+    </FrameLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        design:menu="@menu/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/windowBackground"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>

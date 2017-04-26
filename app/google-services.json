@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741132119961",
+    "firebase_url": "https://hometownandchatapp.firebaseio.com",
+    "project_id": "hometownandchatapp",
+    "storage_bucket": "hometownandchatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741132119961:android:7a0683a22dac74ad",
+        "android_client_info": {
+          "package_name": "edu.sdsu.anuragg.hometownandchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741132119961-ik5uasq6rm1jc2lu9vv5mkocoend71m6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.sdsu.anuragg.hometownandchatapp",
+            "certificate_hash": "d8b6ddb69b11d818f4e9764929641987f3515cf1"
+          }
+        },
+        {
+          "client_id": "741132119961-dsnkbnu64s7ta3t4a8ke0dckqtouq1j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtp9BlnB1UIN7F5my9cVByQRVR-kpzgYw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741132119961-dsnkbnu64s7ta3t4a8ke0dckqtouq1j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

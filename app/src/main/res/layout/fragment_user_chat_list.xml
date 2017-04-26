@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/users_chat_list"
+    tools:context="edu.sdsu.anuragg.hometownandchatapp.UserChatListFragment">
+
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.sdsu.anuragg.hometownandchatapp.LoggedUserActivity"
+        android:id="@+id/activity_find_users"
+        tools:ignore="UselessLeaf"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="320dp">
+
+    </FrameLayout>
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/chat_users_map"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="550dp"
+        android:layout_below="@+id/viewListId"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true"
+        />-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="550dp"
+        android:layout_marginTop="10dp"
+        android:id="@android:id/list"
+        android:layout_below="@+id/viewListId" />
+
+    <Button
+        android:text="@string/chatusermap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:id="@+id/viewMapId"
+        android:layout_alignBaseline="@+id/viewListId"
+        android:layout_alignBottom="@+id/viewListId"
+        android:layout_toEndOf="@+id/viewListId" />
+
+    <Button
+        android:text="@string/chatuserlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewListId"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="420dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="20dp"
+
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context="edu.sdsu.anuragg.hometownandchatapp.MapFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/newMap"
+        android:layout_width="match_parent"
+        android:layout_height="434dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/setLocationId"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true"/>
+
+    <Button
+        android:text="@string/set_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/setLocationId"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="setLocationCoordinates"/>
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    tools:context="edu.sdsu.anuragg.hometownandchatapp.NewUserFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:id="@+id/nicknametextid"
+
+        tools:ignore="LabelFor"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/resetid"
+        android:layout_width="200dp">
+        <requestFocus/>
+    </EditText>
+    <TextView
+        android:text="@string/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:id="@+id/nicknameid"
+        android:layout_alignBaseline="@+id/nicknametextid"
+        android:layout_alignBottom="@+id/nicknametextid"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordid"
+        android:layout_alignBaseline="@+id/passwordtextid"
+        android:layout_alignBottom="@+id/passwordtextid"
+        android:layout_alignStart="@+id/nicknameid" />
+
+    <TextView
+        android:text="@string/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordtextid"
+        android:layout_alignStart="@+id/passwordid"
+        android:layout_marginTop="22dp"
+        android:id="@+id/countryid" />
+
+    <TextView
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countryid"
+        android:layout_alignStart="@+id/countryid"
+        android:layout_marginTop="31dp"
+        android:id="@+id/stateid" />
+
+    <Spinner
+        android:text="@string/select_state"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stateid"
+        android:id="@+id/statelist_spinner"
+        android:layout_alignStart="@+id/citytextid"
+        android:layout_alignEnd="@+id/countrylist_spinner" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:id="@+id/citytextid"
+        android:layout_alignBaseline="@+id/cityid"
+        android:layout_alignBottom="@+id/cityid"
+        android:layout_alignStart="@+id/passwordtextid"
+        tools:ignore="LabelFor"
+        android:layout_alignEnd="@+id/lontextid" />
+
+    <Spinner
+        android:text="@string/select_country"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/countrylist_spinner"
+        android:layout_alignBottom="@+id/countryid"
+        android:layout_alignTop="@+id/countryid"
+        android:layout_alignStart="@+id/passwordtextid"
+        android:layout_toStartOf="@+id/saveid"
+        android:layout_alignEnd="@+id/nicknametextid" />
+
+    <TextView
+        android:text="@string/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/cityid"
+        android:layout_below="@+id/stateid"
+        android:layout_alignStart="@+id/stateid" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordtextid"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/nicknametextid"
+        android:layout_alignStart="@+id/nicknametextid"
+        android:layout_alignEnd="@+id/nicknametextid" />
+
+    <TextView
+        android:text="@string/lat_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lat_lonid"
+        android:layout_alignBottom="@+id/lattextid"
+        android:layout_alignEnd="@+id/countryid" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:ems="10"
+        android:id="@+id/lontextid"
+        tools:ignore="LabelFor"
+        android:layout_above="@+id/getLonLatButtonId"
+        android:layout_alignEnd="@+id/getLonLatButtonId"
+        android:maxLength="7" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/year_spinner"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/citytextid"
+        android:layout_marginTop="24dp"
+        android:layout_alignStart="@+id/citytextid"
+        android:layout_toStartOf="@+id/lontextid"
+        android:layout_alignEnd="@+id/statelist_spinner" />
+
+    <TextView
+        android:text="@string/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yearid"
+        android:layout_alignTop="@+id/year_spinner"
+        android:layout_alignStart="@+id/cityid" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:ems="10"
+        android:id="@+id/lattextid"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/yearid"
+        android:layout_alignStart="@+id/year_spinner"
+        android:maxLength="7" />
+
+    <Button
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveid"
+        tools:ignore="RtlHardcoded"
+        android:onClick="saveClicked"
+        android:layout_alignBaseline="@+id/resetid"
+        android:layout_alignBottom="@+id/resetid"
+        android:layout_toStartOf="@+id/lontextid" />
+
+
+
+    <Button
+        android:text="@string/get_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getLonLatButtonId"
+        android:onClick="getCoordinates"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/lattextid"
+        android:layout_alignEnd="@+id/nicknametextid" />
+
+    <Button
+        android:text="@string/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetid"
+        android:onClick="resetDataFields"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/getLonLatButtonId"
+        android:layout_toEndOf="@+id/stateid" />
+
+</RelativeLayout>

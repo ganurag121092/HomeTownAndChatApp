@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="5dp"
+    android:paddingTop="5dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:text="@string/nickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/usernicknameid" />
+
+    <TextView
+        android:text="@string/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/user_location" />
+    <TextView
+        android:text="@string/school_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/user_year" />
+
+
+</LinearLayout>

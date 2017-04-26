@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_helper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    tools:context="edu.sdsu.anuragg.hometownandchatapp.UserHelperActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="edu.sdsu.anuragg.hometownandchatapp.NewUserFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="600dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/newUserFragment"
+        />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="edu.sdsu.anuragg.hometownandchatapp.MapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="430dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/mapFragment"
+        />
+</RelativeLayout>
+<!--
+tools:layout="@layout/fragment_new_user"
+tools:layout="@layout/fragment_map"
+    </HorizontalScrollView>
+</ScrollView>-->
